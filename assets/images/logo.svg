@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gradPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="gradAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Crest Icon -->
+  <g transform="translate(10, 10)">
+    <!-- Shield Background -->
+    <path d="M50,5 L90,20 C90,65 50,90 50,95 C50,90 10,65 10,20 Z" fill="url(#gradPrimary)" filter="url(#shadow)"/>
+    <path d="M50,10 L84,23 C84,62 50,84 50,88 C50,84 16,62 16,23 Z" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.4"/>
+    
+    <!-- Graduation Cap -->
+    <path d="M50,26 L74,37 L50,48 L26,37 Z" fill="#ffffff"/>
+    <polygon points="50,48 50,58 70,50 70,40" fill="#e2e8f0" opacity="0.9"/>
+    <path d="M72,39 L78,54 L74,54 L69,40 Z" fill="url(#gradAccent)"/>
+    <circle cx="76" cy="55" r="2.5" fill="url(#gradAccent)"/>
+
+    <!-- Open Book -->
+    <path d="M33,62 C40,58 47,60 50,64 C53,60 60,58 67,62 L67,73 C60,69 53,71 50,75 C47,71 40,69 33,73 Z" fill="#ffffff"/>
+    <line x1="50" y1="64" x2="50" y2="75" stroke="#1e3a8a" stroke-width="1.5"/>
+
+    <!-- Accent Stars -->
+    <circle cx="50" cy="18" r="2.5" fill="url(#gradAccent)"/>
+    <circle cx="38" cy="22" r="1.8" fill="url(#gradAccent)"/>
+    <circle cx="62" cy="22" r="1.8" fill="url(#gradAccent)"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="120" y="48" font-family="'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="24" font-weight="800" fill="#0f2744" letter-spacing="0.5">SMART<tspan fill="#2563eb">COLLEGE</tspan></text>
+  <text x="120" y="74" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#475569" letter-spacing="2">EVENT MANAGEMENT SYSTEM</text>
+  <text x="120" y="92" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="500" fill="#94a3b8" letter-spacing="0.8">CAMPUS HUB FOR INNOVATION, ARTS &amp; SPORTS</text>
+</svg>

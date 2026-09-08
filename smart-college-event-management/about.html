@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Smart College - Event Management System</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       MAIN NAVIGATION BAR
+       ========================================================================== -->
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="assets/images/logo.svg" alt="Smart College Crest" height="46">
+      </a>
+      
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About College</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="navbar-actions" id="navbar-auth-buttons">
+          <a href="login.html" class="btn btn-outline-primary btn-sm">
+            <i class="fas fa-sign-in-alt"></i> Login
+          </a>
+          <a href="register.html" class="btn btn-primary btn-sm">
+            <i class="fas fa-user-plus"></i> Register
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       PAGE HEADER / HERO
+       ========================================================================== -->
+  <section class="page-hero">
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="text-center mx-auto" style="max-width: 800px;">
+        <div class="hero-badge mx-auto">
+          <i class="fas fa-university"></i> Academic Excellence &bull; Est. 1985
+        </div>
+        <h1 class="page-hero-title">
+          About <span class="text-gradient">Smart College</span>
+        </h1>
+        <p class="page-hero-subtitle mx-auto">
+          Building future-ready students through technology, innovation, culture and leadership.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 1: EMPOWERING STUDENTS BEYOND THE CLASSROOM
+       ========================================================================== -->
+  <section class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <!-- Left Column: Rich Text & Highlights -->
+        <div class="col-lg-6">
+          <span class="section-tag">Campus Heritage &amp; Leadership</span>
+          <h2 class="section-title mb-4">Empowering Students Beyond the Classroom</h2>
+          <p class="text-secondary leading-relaxed mb-3">
+            At Smart College of Technology, education is a transformative voyage that extends far beyond lecture halls and laboratory benches. Since our foundation in 1985, our philosophy has centered on the holistic development of curious minds through real-world innovation, spirited cultural exploration, and competitive collegiate leadership.
+          </p>
+          <p class="text-secondary leading-relaxed mb-4">
+            Our campus is a thriving incubator where engineers, creators, and organizers collaborate on national hackathons, multidisciplinary symposiums, and vibrant arts festivals. Through our digital Event Management System, every student has an all-access pass to discover passions, build lifelong networks, and earn verifiable credentials for their future careers.
+          </p>
+
+          <div class="row g-3 mb-4">
+            <div class="col-sm-4 col-6">
+              <div class="p-3 border rounded-3 bg-light text-center h-100">
+                <h4 class="fw-bold text-primary mb-1">35+</h4>
+                <p class="text-muted small mb-0 fw-medium">Years of Excellence</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-6">
+              <div class="p-3 border rounded-3 bg-light text-center h-100">
+                <h4 class="fw-bold text-primary mb-1">50+</h4>
+                <p class="text-muted small mb-0 fw-medium">Student Clubs</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-12">
+              <div class="p-3 border rounded-3 bg-light text-center h-100">
+                <h4 class="fw-bold text-primary mb-1">5,000+</h4>
+                <p class="text-muted small mb-0 fw-medium">Active Students</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="events.html" class="btn btn-primary">
+              <i class="fas fa-calendar-alt me-1"></i> Explore Campus Events
+            </a>
+            <a href="#vision-mission" class="btn btn-outline-primary">
+              <i class="fas fa-compass me-1"></i> Our Vision &amp; Mission
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Campus Photo Showcase with Floating Badges -->
+        <div class="col-lg-6">
+          <div class="position-relative mx-auto" style="max-width: 520px;">
+            <!-- Floating Badge Top Right -->
+            <div class="floating-badge top-right">
+              <div class="stat-icon-wrapper stat-icon-gold mb-0" style="width: 42px; height: 42px; font-size: 1.1rem;">
+                <i class="fas fa-award"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold text-navy mb-0">Grade A++</h6>
+                <small class="text-muted">NAAC Accredited</small>
+              </div>
+            </div>
+
+            <!-- Main Showcase Image -->
+            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80" 
+                 alt="Smart College Modern Campus" 
+                 class="rounded-4 shadow-lg w-100" 
+                 style="height: 420px; object-fit: cover; border: 1px solid var(--border-color);">
+
+            <!-- Floating Badge Bottom Left -->
+            <div class="floating-badge bottom-left">
+              <img src="assets/images/seal.svg" alt="Official College Seal" width="44" height="44">
+              <div>
+                <h6 class="fw-bold text-navy mb-0">Top Ranked Hub</h6>
+                <small class="text-muted">National Innovation Tier</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: OUR VISION
+       ========================================================================== -->
+  <section class="py-5" id="vision-mission" style="background: #f8fafc;">
+    <div class="container py-3">
+      <div class="vision-banner-card">
+        <div class="row align-items-center">
+          <div class="col-lg-2 text-center text-lg-start mb-3 mb-lg-0">
+            <div class="d-inline-flex align-items-center justify-content-center" style="width: 72px; height: 72px; border-radius: 16px; background: rgba(6, 182, 212, 0.2); color: #38bdf8; font-size: 2rem;">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div class="vision-tag">
+              <i class="fas fa-eye me-1"></i> Institutional Vision
+            </div>
+            <p class="vision-text mb-0">
+              &ldquo;To create a technology-driven academic environment where students can learn, innovate, collaborate and prepare for a successful future.&rdquo;
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: OUR MISSION
+       ========================================================================== -->
+  <section class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="section-tag">Guiding Principles</span>
+        <h2 class="section-title">Our Mission</h2>
+        <p class="text-muted mx-auto" style="max-width: 620px;">
+          Four strategic pillars driving holistic education, technological ingenuity, and lifelong professional achievement.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Mission Card 1: Academic Excellence -->
+        <div class="col-lg-3 col-md-6">
+          <div class="mission-card">
+            <div class="mission-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Academic Excellence</h5>
+            <p class="text-muted small mb-0 leading-relaxed">
+              Industry-aligned curriculum, world-class faculty mentors, and research-driven experiential learning across cutting-edge disciplines.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mission Card 2: Innovation & Technology -->
+        <div class="col-lg-3 col-md-6">
+          <div class="mission-card">
+            <div class="mission-icon">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Innovation &amp; Technology</h5>
+            <p class="text-muted small mb-0 leading-relaxed">
+              Cutting-edge labs, 24-48hr hackathons, tech incubator access, and hands-on symposiums that turn bold ideas into working prototypes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mission Card 3: Student Leadership -->
+        <div class="col-lg-3 col-md-6">
+          <div class="mission-card">
+            <div class="mission-icon">
+              <i class="fas fa-users-gear"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Student Leadership</h5>
+            <p class="text-muted small mb-0 leading-relaxed">
+              50+ student-led clubs, committee governance, and end-to-end event management experience building seasoned team leaders.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mission Card 4: Community & Culture -->
+        <div class="col-lg-3 col-md-6">
+          <div class="mission-card">
+            <div class="mission-icon">
+              <i class="fas fa-earth-americas"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Community &amp; Culture</h5>
+            <p class="text-muted small mb-0 leading-relaxed">
+              Vibrant arts festivals, inter-college athletic meets, inclusivity initiatives, and social outreach creating well-rounded global citizens.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: CAMPUS LIFE
+       ========================================================================== -->
+  <section class="py-5" style="background: #f8fafc;">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="section-tag">Vibrant Student Experience</span>
+        <h2 class="section-title">Campus Life &amp; Activities</h2>
+        <p class="text-muted mx-auto" style="max-width: 620px;">
+          Immerse yourself in a diverse spectrum of extracurriculars, competitions, sports tournaments, and creative societies.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Technical Events -->
+        <div class="col-lg-4 col-md-6">
+          <div class="campus-card">
+            <div class="campus-icon-box" style="background: #eff6ff; color: #2563eb;">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Technical Events</h5>
+            <p class="text-muted small mb-3 leading-relaxed">
+              Algorithmic coding contests, robotics challenges, Web3 &amp; AI summits, and hardware battlegrounds where future builders test their mettle.
+            </p>
+            <div class="mt-auto">
+              <span class="badge bg-primary-subtle text-primary fw-semibold px-2.5 py-1.5 rounded-pill small">
+                <i class="fas fa-code me-1"></i> Coding &bull; AI &bull; Robotics
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Cultural Events -->
+        <div class="col-lg-4 col-md-6">
+          <div class="campus-card">
+            <div class="campus-icon-box" style="background: #fdf2f8; color: #db2777;">
+              <i class="fas fa-masks-theater"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Cultural Events</h5>
+            <p class="text-muted small mb-3 leading-relaxed">
+              Annual grand galas, musical concerts, theatrical dramas, art exhibitions, and dance face-offs celebrating creativity and expression.
+            </p>
+            <div class="mt-auto">
+              <span class="badge bg-danger-subtle text-danger fw-semibold px-2.5 py-1.5 rounded-pill small">
+                <i class="fas fa-music me-1"></i> Music &bull; Dance &bull; Drama
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Workshops & Seminars -->
+        <div class="col-lg-4 col-md-6">
+          <div class="campus-card">
+            <div class="campus-icon-box" style="background: #fef3c7; color: #d97706;">
+              <i class="fas fa-chalkboard-user"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Workshops &amp; Seminars</h5>
+            <p class="text-muted small mb-3 leading-relaxed">
+              Expert-led masterclasses, industry executive keynotes, hands-on tool bootcamps, and career accelerators providing actionable skills.
+            </p>
+            <div class="mt-auto">
+              <span class="badge bg-warning-subtle text-warning-emphasis fw-semibold px-2.5 py-1.5 rounded-pill small">
+                <i class="fas fa-lightbulb me-1"></i> Hands-on &bull; Keynotes
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Hackathons & Competitions -->
+        <div class="col-lg-4 col-md-6">
+          <div class="campus-card">
+            <div class="campus-icon-box" style="background: #ecfeff; color: #0891b2;">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Hackathons &amp; Competitions</h5>
+            <p class="text-muted small mb-3 leading-relaxed">
+              High-stakes 24 to 48-hour sprint hackathons with exciting prize pools, industry problem statements, and angel investor showcases.
+            </p>
+            <div class="mt-auto">
+              <span class="badge bg-info-subtle text-info-emphasis fw-semibold px-2.5 py-1.5 rounded-pill small">
+                <i class="fas fa-bolt me-1"></i> 24-48hr Challenges
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Sports & Athletics -->
+        <div class="col-lg-4 col-md-6">
+          <div class="campus-card">
+            <div class="campus-icon-box" style="background: #ecfdf5; color: #059669;">
+              <i class="fas fa-volleyball"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Sports &amp; Athletics</h5>
+            <p class="text-muted small mb-3 leading-relaxed">
+              Inter-college leagues, athletic meets, cricket &amp; football championships, indoor badminton courts, and campus fitness marathons.
+            </p>
+            <div class="mt-auto">
+              <span class="badge bg-success-subtle text-success fw-semibold px-2.5 py-1.5 rounded-pill small">
+                <i class="fas fa-medal me-1"></i> Leagues &bull; Tournaments
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Clubs & Student Activities -->
+        <div class="col-lg-4 col-md-6">
+          <div class="campus-card">
+            <div class="campus-icon-box" style="background: #f5f3ff; color: #7c3aed;">
+              <i class="fas fa-people-group"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Clubs &amp; Activities</h5>
+            <p class="text-muted small mb-3 leading-relaxed">
+              Over 50 student-run chapters covering astronomy, debate, social volunteering, photography, gaming, and entrepreneurship.
+            </p>
+            <div class="mt-auto">
+              <span class="badge bg-purple-subtle text-purple fw-semibold px-2.5 py-1.5 rounded-pill small" style="background: #ede9fe; color: #7c3aed;">
+                <i class="fas fa-users me-1"></i> 50+ Active Societies
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: EVERYTHING ABOUT CAMPUS EVENTS IN ONE PLACE
+       ========================================================================== -->
+  <section class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <!-- Left: Feature Description & Checklist -->
+        <div class="col-lg-6">
+          <span class="section-tag">Centralized Event Ecosystem</span>
+          <h2 class="section-title mb-3">Everything About Campus Events in One Place</h2>
+          <p class="text-secondary leading-relaxed mb-4">
+            The Smart College Event Management platform bridges students, faculty coordinators, and campus administration. No more paper posters, lost tickets, or manual attendance queues—our digital portal powers the complete event lifecycle.
+          </p>
+
+          <div class="feature-check-list">
+            <!-- 1. Easy Discovery -->
+            <div class="feature-check-item">
+              <div class="feature-check-icon"><i class="fas fa-check"></i></div>
+              <div>
+                <h6 class="fw-bold text-navy mb-1">Easy Event Discovery &amp; Registration</h6>
+                <p class="text-muted small mb-0">Search by department, date, or category with 1-click registration and instant digital booking confirmation.</p>
+              </div>
+            </div>
+
+            <!-- 2. QR Attendance -->
+            <div class="feature-check-item">
+              <div class="feature-check-icon"><i class="fas fa-check"></i></div>
+              <div>
+                <h6 class="fw-bold text-navy mb-1">Real-Time QR Attendance</h6>
+                <p class="text-muted small mb-0">Contactless QR code pass generated instantly for swift check-in at auditoriums and entrance gates.</p>
+              </div>
+            </div>
+
+            <!-- 3. Digital Certificates -->
+            <div class="feature-check-item">
+              <div class="feature-check-icon"><i class="fas fa-check"></i></div>
+              <div>
+                <h6 class="fw-bold text-navy mb-1">Instant Verified Digital Certificates</h6>
+                <p class="text-muted small mb-0">Attendees receive university-sealed, cryptographically verified credentials ready for LinkedIn and resumes.</p>
+              </div>
+            </div>
+
+            <!-- 4. Notifications -->
+            <div class="feature-check-item">
+              <div class="feature-check-icon"><i class="fas fa-check"></i></div>
+              <div>
+                <h6 class="fw-bold text-navy mb-1">Live Event Updates &amp; Notifications</h6>
+                <p class="text-muted small mb-0">Automated alerts for venue announcements, schedule modifications, and upcoming registration deadlines.</p>
+              </div>
+            </div>
+
+            <!-- 5. Participation Tracking -->
+            <div class="feature-check-item">
+              <div class="feature-check-icon"><i class="fas fa-check"></i></div>
+              <div>
+                <h6 class="fw-bold text-navy mb-1">Student Participation Tracking &amp; Portfolios</h6>
+                <p class="text-muted small mb-0">Centralized student activity transcript logging every workshop, hackathon, and extracurricular milestone.</p>
+              </div>
+            </div>
+
+            <!-- 6. Interactive Feedback -->
+            <div class="feature-check-item">
+              <div class="feature-check-icon"><i class="fas fa-check"></i></div>
+              <div>
+                <h6 class="fw-bold text-navy mb-1">Interactive Feedback &amp; Ratings</h6>
+                <p class="text-muted small mb-0">Structured attendee ratings and suggestions empowering organizers to continuously elevate event quality.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Modern Interactive Portal Snapshot -->
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-lg p-4 p-md-5" style="border-radius: 20px; background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border: 1px solid var(--border-color) !important;">
+            <div class="d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom">
+              <div class="d-flex align-items-center gap-3">
+                <img src="assets/images/logo.svg" alt="Smart College" height="38">
+              </div>
+              <span class="badge bg-success-subtle text-success fw-bold px-3 py-1.5 rounded-pill">
+                <i class="fas fa-circle me-1" style="font-size: 8px;"></i> Live Portal
+              </span>
+            </div>
+
+            <!-- Mini Pass Mockup Card -->
+            <div class="p-3 rounded-3 mb-3" style="background: #0b192c; color: #ffffff;">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="small text-light text-uppercase fw-bold" style="letter-spacing: 1px;">Digital Event Pass</span>
+                <span class="badge bg-primary text-white" style="font-size: 0.7rem;">Verified</span>
+              </div>
+              <h6 class="fw-bold text-white mb-1">HackInnovate 2026: 36-Hour Hackathon</h6>
+              <p class="text-light small mb-3"><i class="fas fa-calendar-alt text-primary me-1"></i> Oct 15-16 &bull; Innovation Hall A</p>
+              
+              <div class="d-flex align-items-center justify-content-between p-2 rounded-2" style="background: rgba(255, 255, 255, 0.08);">
+                <div class="small">
+                  <span class="text-muted d-block" style="font-size: 0.72rem;">STUDENT REGISTRATION</span>
+                  <strong class="text-white">STU2024CS089</strong>
+                </div>
+                <div class="text-end">
+                  <i class="fas fa-qrcode text-info fs-3"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Live Stat Highlights -->
+            <div class="row g-2 text-center">
+              <div class="col-4">
+                <div class="p-2 border rounded-3 bg-white">
+                  <strong class="d-block text-primary fs-5 fw-bold">100%</strong>
+                  <span class="text-muted" style="font-size: 0.72rem;">Digital Passes</span>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="p-2 border rounded-3 bg-white">
+                  <strong class="d-block text-success fs-5 fw-bold">0s</strong>
+                  <span class="text-muted" style="font-size: 0.72rem;">Paper Waste</span>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="p-2 border rounded-3 bg-white">
+                  <strong class="d-block text-info fs-5 fw-bold">Instant</strong>
+                  <span class="text-muted" style="font-size: 0.72rem;">Certificates</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: WHY SMART COLLEGE EVENT MANAGEMENT?
+       ========================================================================== -->
+  <section class="py-5" style="background: #f8fafc;">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="section-tag">System Advantages</span>
+        <h2 class="section-title">Why Smart College Event Management?</h2>
+        <p class="text-muted mx-auto" style="max-width: 600px;">
+          Engineered to provide a seamless, secure, and intuitive digital hub for our entire collegiate community.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Easy to Use -->
+        <div class="col-lg-3 col-md-6">
+          <div class="why-card">
+            <div class="why-icon">
+              <i class="fas fa-wand-magic-sparkles"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Easy to Use</h5>
+            <p class="text-muted small mb-0 leading-relaxed">
+              Clean, responsive, and intuitive interface tailor-made for students, faculty organizers, and university admins.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Secure & Reliable -->
+        <div class="col-lg-3 col-md-6">
+          <div class="why-card">
+            <div class="why-icon">
+              <i class="fas fa-shield-halved"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Secure &amp; Reliable</h5>
+            <p class="text-muted small mb-0 leading-relaxed">
+              Role-based access control, cryptographic verification hashes, and strict student data privacy protection.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Fast Registration -->
+        <div class="col-lg-3 col-md-6">
+          <div class="why-card">
+            <div class="why-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Fast Registration</h5>
+            <p class="text-muted small mb-0 leading-relaxed">
+              Zero-friction one-click event sign-up with immediate seat reservation and instant QR pass generation.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. Centralized -->
+        <div class="col-lg-3 col-md-6">
+          <div class="why-card">
+            <div class="why-icon">
+              <i class="fas fa-cubes-stacked"></i>
+            </div>
+            <h5 class="fw-bold text-navy mb-2">Centralized Hub</h5>
+            <p class="text-muted small mb-0 leading-relaxed">
+              All 50+ campus clubs, departmental seminars, fests, schedules, and passes unified under a single portal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EVENTS ADVISORY COMMITTEE / FACULTY LEADERSHIP
+       ========================================================================== -->
+  <section class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="section-tag">Leadership &amp; Faculty</span>
+        <h2 class="section-title">Events Advisory Committee</h2>
+        <p class="text-muted mx-auto" style="max-width: 580px;">Dedicated faculty members steering our technical summits, hackathons, and cultural galas.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm p-4 text-center h-100" style="border-radius: 14px; border: 1px solid var(--border-color) !important;">
+            <div class="user-avatar mx-auto mb-3" style="width: 72px; height: 72px; font-size: 1.5rem; background: #1e3a8a;">AM</div>
+            <h5 class="fw-bold text-navy mb-1">Prof. Arvind Mehta</h5>
+            <p class="text-primary small fw-semibold mb-2">Dean of Student Affairs</p>
+            <p class="text-muted small mb-0">Oversees all campus festivals, discipline, and institutional calendar planning.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm p-4 text-center h-100" style="border-radius: 14px; border: 1px solid var(--border-color) !important;">
+            <div class="user-avatar mx-auto mb-3" style="width: 72px; height: 72px; font-size: 1.5rem; background: #0891b2;">SJ</div>
+            <h5 class="fw-bold text-navy mb-1">Dr. Sarah Jenkins</h5>
+            <p class="text-primary small fw-semibold mb-2">Head, Innovation &amp; Tech Society</p>
+            <p class="text-muted small mb-0">Coordinates hackathons, robotics challenges, and hands-on developer workshops.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm p-4 text-center h-100" style="border-radius: 14px; border: 1px solid var(--border-color) !important;">
+            <div class="user-avatar mx-auto mb-3" style="width: 72px; height: 72px; font-size: 1.5rem; background: #d97706;">MR</div>
+            <h5 class="fw-bold text-navy mb-1">Prof. Maya Roy</h5>
+            <p class="text-primary small fw-semibold mb-2">Cultural Secretary &amp; Arts Mentor</p>
+            <p class="text-muted small mb-0">Directs annual theater productions, music concerts, and the AuraFest Cultural Gala.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: CALL TO ACTION (CTA)
+       ========================================================================== -->
+  <section class="py-5" style="background: radial-gradient(circle at 85% 20%, #1e3a8a 0%, #0b192c 70%, #071220 100%); color: #ffffff;">
+    <div class="container py-4 text-center">
+      <h2 class="display-6 fw-bold text-white mb-3">Be Part of Campus Life</h2>
+      <p class="text-light mb-4 mx-auto" style="max-width: 640px; font-size: 1.1rem; line-height: 1.6;">
+        Discover upcoming workshops, hackathons, cultural fests and sports tournaments. Register today and make your college journey memorable.
+      </p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="events.html" class="btn btn-accent btn-lg">
+          <i class="fas fa-calendar-alt me-1"></i> Explore Events
+        </a>
+        <a href="register.html" class="btn btn-outline-light btn-lg">
+          <i class="fas fa-user-plus me-1"></i> Register Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand"><img src="assets/images/logo.svg" alt="Smart College Logo"></div>
+          <p class="footer-lead">Smart College Event Management System is the official central digital portal for academic, technical, cultural, and athletic gatherings.</p>
+          <div class="d-flex gap-3 text-light fs-5 mt-3">
+            <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About College</a></li>
+            <li><a href="events.html">Browse Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-title">Portals</h5>
+          <ul class="footer-links">
+            <li><a href="student/dashboard.html">Student Portal</a></li>
+            <li><a href="organizer/dashboard.html">Organizer Portal</a></li>
+            <li><a href="admin/dashboard.html">Admin Central</a></li>
+            <li><a href="login.html">Demo Quick Login</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Contact Office</h5>
+          <p class="small text-light mb-1"><i class="fas fa-map-marker-alt me-2 text-info"></i>Student Affairs Wing, Academic Block 1</p>
+          <p class="small text-light mb-1"><i class="fas fa-envelope me-2 text-info"></i>events@smartcollege.edu</p>
+          <p class="small text-light"><i class="fas fa-phone me-2 text-info"></i>+91 (0) 80 2345 6789</p>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <p class="mb-0">&copy; <span class="current-year">2026</span> Smart College Event Management System. All Rights Reserved.</p>
+        <p class="mb-0">Designed for College Project Demonstration &bull; Clean REST &amp; MySQL Ready</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

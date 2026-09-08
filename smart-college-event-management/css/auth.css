@@ -1,0 +1,281 @@
+/* ==========================================================================
+   SMART COLLEGE EVENT MANAGEMENT SYSTEM - AUTHENTICATION STYLES
+   ========================================================================== */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 10% 20%, #f0fdfa 0%, #f8fafc 90%);
+  padding: 2.5rem 1rem;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 1050px;
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 20px 40px -10px rgba(11, 25, 44, 0.12);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  min-height: 640px;
+}
+
+/* Left Hero / Promo Panel */
+.auth-sidebar {
+  background: linear-gradient(145deg, #071220 0%, #0b192c 50%, #1e3a8a 100%);
+  color: #ffffff;
+  padding: 3.5rem 2.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-sidebar::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.2) 0%, rgba(11, 25, 44, 0) 70%);
+}
+
+.auth-brand-logo {
+  height: 48px;
+  filter: brightness(0) invert(1);
+  margin-bottom: 2rem;
+}
+
+.auth-sidebar-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.auth-sidebar-desc {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.65;
+  margin-bottom: 2rem;
+}
+
+.auth-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.auth-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 0.9rem;
+  color: #e2e8f0;
+}
+
+.auth-feature-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-full);
+  background: rgba(6, 182, 212, 0.15);
+  border: 1px solid rgba(6, 182, 212, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #38bdf8;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.auth-sidebar-footer {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin-top: 2rem;
+}
+
+/* Right Form Panel */
+.auth-form-panel {
+  padding: 3.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.auth-header {
+  margin-bottom: 1.75rem;
+}
+
+.auth-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--primary-navy);
+  margin-bottom: 0.35rem;
+  letter-spacing: -0.02em;
+}
+
+.auth-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Form Controls */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.4rem;
+}
+
+.input-icon-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  pointer-events: none;
+  transition: color var(--transition-fast);
+}
+
+.form-control, .form-select {
+  width: 100%;
+  padding: 0.72rem 1rem 0.72rem 2.6rem;
+  font-size: 0.92rem;
+  font-family: var(--font-body);
+  color: var(--text-main);
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #06b6d4;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.18);
+}
+
+.input-icon-group:focus-within .input-icon {
+  color: #0891b2;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 0.9rem;
+  transition: color var(--transition-fast);
+}
+
+.password-toggle-btn:hover {
+  color: var(--text-main);
+}
+
+/* Password Strength Meter */
+.password-strength-bar {
+  height: 4px;
+  background: #e2e8f0;
+  border-radius: var(--radius-full);
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.password-strength-fill {
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.strength-weak { width: 33%; background-color: var(--accent-rose); }
+.strength-medium { width: 66%; background-color: #f59e0b; }
+.strength-strong { width: 100%; background-color: #0891b2; }
+
+/* Demo Role Badges / Switchers */
+.demo-role-box {
+  background: #f0fdfa;
+  border: 1px dashed #99f6e4;
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.demo-role-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #0f766e;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.demo-chips {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.demo-chip-btn {
+  padding: 0.32rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: #ffffff;
+  color: #0f766e;
+  border: 1px solid #ccfbf1;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.demo-chip-btn:hover {
+  background: #0891b2;
+  color: #ffffff;
+  border-color: #0891b2;
+}
+
+/* Validation Feedback */
+.invalid-feedback-custom {
+  display: none;
+  font-size: 0.78rem;
+  color: var(--accent-rose);
+  margin-top: 0.35rem;
+  font-weight: 500;
+}
+
+.is-invalid + .invalid-feedback-custom,
+.input-icon-group.is-invalid ~ .invalid-feedback-custom {
+  display: block;
+}
+
+.form-control.is-invalid {
+  border-color: var(--accent-rose);
+}
